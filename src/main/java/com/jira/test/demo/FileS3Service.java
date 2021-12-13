@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class FileS3Service {
-    BasicAWSCredentials creds = new BasicAWSCredentials("AKIAYQDAJLVU73OJP4AK", "J4EJ22OJCA4nQQGaNXG7qJ4JFNlkEHOLOOP3u2kh");
+    BasicAWSCredentials creds = new BasicAWSCredentials("AKIAYQDAJLVUVZRKPYHW", "l1ccgjpts+xEhSLa3ddE8QraFIh7+bG09FwY8MVJ");
     private final AmazonS3 s3 = AmazonS3ClientBuilder.standard()
            .withCredentials(new AWSStaticCredentialsProvider(creds))
             .withRegion(Regions.US_WEST_1)
