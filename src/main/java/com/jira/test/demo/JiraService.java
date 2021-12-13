@@ -20,15 +20,6 @@ public class JiraService {
     }
 
     public boolean createIssue(String token) {
-        File file = new File("src/sample.txt");
-        try {
-            PrintStream stream = new PrintStream(file);
-            System.out.println("From now on "+file.getAbsolutePath()+" will be your console");
-            System.setOut(stream);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
         S3Object s3Object = fileS3Service.getObject("attachment-uploader-test-azure", "39531967-8d9a-430a-993f-30b1a2072f80.mp4");
         byte[] byteArray = new byte[0];
         try {
