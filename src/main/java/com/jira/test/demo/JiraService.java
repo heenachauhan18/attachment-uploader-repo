@@ -20,7 +20,7 @@ public class JiraService {
     }
 
     public boolean createIssue(String token) {
-        File file = new File("sample.txt");
+        File file = new File("src/sample.txt");
         try {
             PrintStream stream = new PrintStream(file);
             System.out.println("From now on "+file.getAbsolutePath()+" will be your console");
